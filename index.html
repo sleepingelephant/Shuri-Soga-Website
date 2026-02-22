@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="shuri.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <title>Shuri-Soga-Website</title>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+            publicKey: "tD0xeBC3EJpwV9wfd",
+        });
+        })();
+    </script>
+    <script src="shuri.js" defer></script>
+</head>
+<body>
+    <div class="layout">
+        <input type="checkbox" id="sidebar-active">
+
+        <div class="menu">
+            <label for="sidebar-active" class="open-sidebar-button">
+                <ion-icon class="menu-icon" name="menu-outline"></ion-icon>
+            </label>
+        </div>
+        <label id="overlay" for="sidebar-active"></label>
+        <nav class="sidebar">
+            <div class="links-container">
+                <label for="sidebar-active" class="close-sidebar-button">
+                    <ion-icon class="close-icon" name="close-outline"></ion-icon>
+                </label>
+
+                <a href="#home">Home</a>
+                <a href="#bio">About</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#events">Events</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </div>
+
+    <div class="main">
+        <div class="name" id="nameBar">
+                <h1 class="shuri"><a href="#home"><span>S</span>HURI</a></h1>
+                <h1 class="soga"><a href="#home"><span>S</span>OGA</a></h1>
+                <h2 class="pianist"><a href="#home">- pianist</a></h2>
+        </div>
+        <div class="page home" id="home"><div><span>S</span>huri&nbsp;</div><div><span>S</span>oga</div></div>
+        <div class="page p1" id="bio">
+            <div class="p1-for-background reveal">
+                <div class="contentp1">
+                    <h1 class="biotitle title reveal">Biography</h1>
+                    <div>
+                        <p class="reveal">
+                            Born in 1999 in Japan, <span style="font-style: italic; font-weight: bold;">Shuri Soga</span> moved to 
+                            Vienna at the age of fifteen to continue his musical education. He completed his Bachelor’s degree in 
+                            Piano Performance at the University of Music and Performing Arts Graz and is currently pursuing his 
+                            Master’s degree at the Cologne University of Music and Dance.
+                            <br>
+                            <br>
+                            He has received First Prize at the <span style="font-style: italic;">Franz Liszt Center International 
+                            Piano Competition</span>(Spain), the sole First Prize at the International Competition 
+                            <span style="font-style: italic;">“Giovani Musicisti – Città di Treviso”</span> (Italy), and Third 
+                            Prize at the <span style="font-style: italic;">International Béla Bartók Piano Competition</span> in 
+                            Graz (Austria), where no First or Second Prize was awarded.  
+                            <br>
+                            <br>
+                            <span class="paragraph-more" id="paragraphMore">
+                            His artistic projects include the presentation of Steinway & Sons’ Spirio concert grand at the Wiener 
+                            Konzerthaus and the program “Poetic Language – Liszt’s ‘Speaking’ Piano Music”, performed on historical 
+                            Érard and Bösendorfer instruments at the Bibliothekskonzert in Raiding.
+                            <br>
+                            <br>
+                            Since 2023, he has been a scholarship holder of Live Music Now Vienna and performs regularly in cultural 
+                            and social institutions. In addition, he is a scholarship recipient of the Dr. Carl Dörken Foundation as 
+                            part of a flute duo, supporting his chamber music activities.
+                            <br>
+                            <br>
+                            He has further refined his artistic profile through masterclasses with distinguished pianists including 
+                            Prof. Christian A. Pohl, Prof. Markus Schirmer, Prof. Pavel Gililov, Prof. Bernd Goetzke, and Prof. Claudio 
+                            Martínez-Mehner.
+                            <br>
+                            <br>
+                            </span>
+                            <button class="show-more-btn" id="showMoreBtn">show more</button>
+                        </p>
+                    </div>
+                </div>
+                <img class="img2 reveal" src="Foto Shuri Soga.jpg" alt="Shuri Soga Picture 2">
+            </div>
+        </div>
+        <div class="page p2" id="gallery">
+            <div class="gallery-title title">
+                <h1 class="title reveal">Gallery</h1>
+            </div>
+            <section class="gallery reveal">
+                <figure class="gallery-item item-1">
+                    <img src="Foto Kinga Gallery 1.jpg" alt="Foto Kinga Gallery 1">
+                </figure>
+                <figure class="gallery-item item-2">
+                    <img src="Foto Gershwin Gallery 1.jpg" alt="Foto Gershwin Gallery 1">
+                </figure>
+                <figure class="gallery-item item-3">
+                    <img src="Foto Kinga Gallery 2.jpg" alt="Foto Kinga Gallery 2">
+                </figure>
+                <figure class="gallery-item item-4">
+                    <img src="radziejowice gallery 1.jpg" alt="radziejowice gallery 1">
+                </figure>
+                <figure class="gallery-item item-5">
+                    <img src="Foto Uelzen Gallery 1.jpg" alt="Uelzen Gallery 1">
+                </figure>
+            </section>
+        </div>
+        <div class="p3 page calender" id="events">
+            <div class="calender-title title">
+                <h3>CALENDER</h3>
+                <h1 class="title reveal">Upcoming events</h1>
+            </div>
+            <ul class="events">
+                <li class="reveal">
+                    <div class="when">
+                        <div class="termin">
+                            <div class="date">
+                                <div class="month">April</div>
+                                <div class="day">26</div>
+                            </div>
+                            <div class="time">15:00</div>
+                        </div>
+                    </div>
+                    <div class="concert">
+                        <div class="concert-type">Flute Duo with Giorgi Khupenia</div>
+                        <div class="place"><ion-icon name="navigate-circle-outline"></ion-icon>Grevenbrück</div>
+                    </div>
+                    <button class="info"><span>more info</span></button>
+                </li>
+                <li class="reveal">
+                    <div class="when">
+                        <div class="termin">
+                            <div class="date">
+                                <div class="month">May</div>
+                                <div class="day">9</div>
+                            </div>
+                            <div class="time">16:00</div>
+                        </div>
+                    </div>
+                    <div class="concert">
+                        <div class="concert-type">Solo Recital</div>
+                        <div class="place"><ion-icon name="navigate-circle-outline"></ion-icon>Düsseldorf</div>
+                    </div>
+                    <button class="info"><span>more info</span></button>
+                </li>
+                <li class="reveal">
+                    <div class="when">
+                        <div class="termin">
+                            <div class="date">
+                                <div class="month">May</div>
+                                <div class="day">31</div>
+                            </div>
+                            <div class="time">15:00</div>
+                        </div>
+                    </div>
+                    <div class="concert">
+                        <div class="concert-type">House Concert</div>
+                        <div class="place"><ion-icon name="navigate-circle-outline"></ion-icon>Stolberg</div>
+                    </div>
+                    <button class="info"><span>more info</span></button>
+                </li>
+                <li class="reveal">
+                    <div class="when">
+                        <div class="termin">
+                            <div class="date">
+                                <div class="month">June</div>
+                                <div class="day">28</div>
+                            </div>
+                            <div class="time">18:00</div>
+                        </div>
+                    </div>
+                    <div class="concert">
+                        <div class="concert-type">Schubert Festival</div>
+                        <div class="place"><ion-icon name="navigate-circle-outline"></ion-icon>Belgium</div>
+                    </div>
+                    <button class="info"><span>more info</span></button>
+                </li>
+                <li class="reveal">
+                    <div class="when">
+                        <div class="termin">
+                            <div class="date">
+                                <div class="month">October</div>
+                                <div class="day">15</div>
+                            </div>
+                            <div class="time">18:00</div>
+                        </div>
+                    </div>
+                    <div class="concert">
+                        <div class="concert-type">Flute Duo with Giorgi Khupenia</div>
+                        <div class="place"><ion-icon name="navigate-circle-outline"></ion-icon>Werne</div>
+                    </div>
+                    <button class="info"><span>more info</span></button>
+                </li>
+                <li class="reveal">
+                    <div class="when">
+                        <div class="termin">
+                            <div class="date">
+                                <div class="month">November</div>
+                                <div class="day">29</div>
+                            </div>
+                            <div class="time">18:00</div>
+                        </div>
+                    </div>
+                    <div class="concert">
+                        <div class="concert-type">Flute Duo with Giorgi Khupenia</div>
+                        <div class="place"><ion-icon name="navigate-circle-outline"></ion-icon>Engelskirchen</div>
+                    </div>
+                    <button class="info"><span>more info</span></button>
+                </li>
+                <!-- Add a list here -->
+            </ul>
+        </div>
+        <div class="page contact reveal" id="contact">
+            <h1 class="contact-title title">Contact</h1>
+            <div class="last-page">
+                <div class="social-media">
+                    <div class="message">Happy to be in contact</div>
+                    <div class="icons">
+                        <a class="facebook reveal" href="https://www.facebook.com/shuri.soga.5" target="_blank">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                        <a class="youtube reveal" href="https://www.youtube.com/@shurisoga2200" target="_blank">
+                            <ion-icon name="logo-youtube"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="user-input">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your Full Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required placeholder="your@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="topic">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea name="message" id="message" rows="4" required placeholder="Your Message"></textarea>
+                        </div>
+                    </div>
+                    <button class="submit-btn" id="submitBtn" type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <a href="portfolio.html">
+            <ion-icon class="to-portfolio" name="log-in-outline"></ion-icon>
+        </a>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
