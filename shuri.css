@@ -513,6 +513,12 @@ p {
     z-index: 2;
 }
 
+.info a{
+    text-decoration: none;
+    color: var(--whitebackground);
+    font-family: var(--title-font-family);
+}
+
 .info span:hover {
     background-color: var(--hover-accent-color);
 } 
